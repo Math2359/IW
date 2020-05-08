@@ -43,6 +43,9 @@ nav ul li a{
 	text-decoration: none;
     color:#B3463E;}
 
+    #kara{
+    width: 100%}
+
 @media screen and (min-width: 768px){
 
 /* CABEÇALHO OU BARRA DE NAVEGAÇÃO*/
@@ -54,3 +57,77 @@ nav ul{
 	flex-direction: row;
 	width: 70%;}
 }
+/* HEADER*/
+header{
+	 background-image:url(../img/imgh1-2.jpg);
+	 background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 display: flex;
+	 color:#B3463E;
+	 flex-direction: column;
+	 align-items: center;
+	 text-align: center;
+	 padding: 20px;
+	 height: 500px;
+	 justify-content: center;}
+
+header p{
+	margin-bottom: 2em;
+	font-size: 1.7em;
+}
+#botão{
+	color: #B3463E;
+	padding: 10px 10px;
+	font-size: 1.3em;
+	text-decoration: none;}
+
+#container{
+	width: 100%;}
+
+
+
+	/* Sobre*/
+
+#Sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #A6FFCB;
+	color: #B3463E;}
+
+#Sobre h2{
+	margin-top: 20px;
+	font-size: 2em;}
+
+.ul img{
+	width:60%;}
+
+.ul{
+	float: left;
+	width: 50%;}
+
+#eu{
+	float: right;
+	width: 50%;}
+
+#Sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh;
+	justify-content: center;
+	min-height: 80vh;}
+
+#Sobre h2{
+	text-align: center;
+	width: 100%;}
+
+#sobre div{
+	flex-grow: 1;
+	flex-basis: 300px;	}
+
+
+
+
