@@ -1,6 +1,7 @@
 /*FORMATAÇÃO GERAL */
+
 body{
-	font-family: 'Gochi Hand', cursive;}
+	font-family: 'Gochi Hand', sans-serif;}
 
 h1, h2, h3{
 	margin: 0;
@@ -13,7 +14,7 @@ p{
 /* CABEÇALHO OU BARRA DE NAVEGAÇÃO*/
 
 #logo img{
-    border-radius: 50%;}
+   	border-radius: 50%;}
 
 nav{
 	display: flex;
@@ -44,20 +45,10 @@ nav ul li a{
     color:#B3463E;}
 
     #kara{
-    width: 100%}
+    width: 100%;}
 
-@media screen and (min-width: 768px){
+    /* HEADER*/
 
-/* CABEÇALHO OU BARRA DE NAVEGAÇÃO*/
-nav{
-	flex-direction: row;
-	justify-content: space-around;}
-
-nav ul{
-	flex-direction: row;
-	width: 70%;}
-}
-/* HEADER*/
 header{
 	 background-image:url(../img/imgh1-2.jpg);
 	 background-size: cover;
@@ -68,9 +59,7 @@ header{
 	 flex-direction: column;
 	 align-items: center;
 	 text-align: center;
-	 padding: 20px;
-	 height: 500px;
-	 justify-content: center;}
+	 padding: 20px;}
 
 header p{
 	margin-bottom: 2em;
@@ -82,10 +71,8 @@ header p{
 	font-size: 1.3em;
 	text-decoration: none;}
 
-#container{
-	width: 100%;}
-
-
+#kara{
+    width: 100%;}
 
 	/* Sobre*/
 
@@ -112,6 +99,96 @@ header p{
 	float: right;
 	width: 50%;}
 
+/*Habilidades*/
+
+#habilidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;}
+
+#habilidades div{
+	display:flex; 
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px}
+
+#habilidades p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2em;}
+
+#habilidades img{
+	margin: 10 px 0;}
+
+#habilidades h2{
+	font-size: 2em;}
+
+#porta{
+	width: 50%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;}
+
+/*Competências*/
+
+#Competências{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;}
+
+#Competências h2{
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-size: 2em;
+	text-align: center;}
+
+#Competências h3,p{
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-size: 1em;
+	text-align: center;}
+
+#Competências a{
+	text-decoration: none;}
+
+#Competências .port img{
+	width: 100%;
+	margin-bottom: 0;}
+
+#Competências p{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	margin-top: 0;
+	font-family: 'Open Sans', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;}
+
+
+
+/*Responsivo*/
+
+@media screen and (min-width: 768px){
+
+/* CABEÇALHO OU BARRA DE NAVEGAÇÃO*/
+nav{
+	justify-content: space-around;}
+
+nav ul{
+	flex-direction: row;
+	width: 70%;}
+
+/*Sobre*/
+
 #Sobre{
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -126,8 +203,42 @@ header p{
 
 #sobre div{
 	flex-grow: 1;
-	flex-basis: 300px;	}
+	flex-basis: 300px;}
+
+/*Header*/
+
+header{
+	height: 500px;
+	 justify-content: center;}
 
 
+/*Habilidades*/
 
+#habilidades{
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto;}
 
+#habilidades h2{
+	text-align: center;
+	width: 100%;}
+
+#habilidades div{
+	flex-grow: 1;
+	flex-basis: 300px;
+	padding: 0 10px;}
+
+/*Competências*/
+
+#Competências {
+	flex-direction: row;
+	flex-wrap: wrap;}
+
+#Competências h2,h3{
+	width:100%;
+	text-align: center;}
+
+#Competências .port{
+	width: 50%
+	text-align:center;}}
