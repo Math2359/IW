@@ -9,7 +9,9 @@ h1, h2, h3{
     font-weight: 700;}
 
 p{
-	font-family: 'Open Sans', sans-serif;} 
+	font-family: 'Balsamiq Sans', cursive;} 
+
+
 
 /* CABEÇALHO OU BARRA DE NAVEGAÇÃO*/
 
@@ -42,7 +44,7 @@ nav ul li a{
     padding: 10px 0;
 	width: 100%;
 	text-decoration: none;
-    color:#B3463E;}
+    color: #B3463E;}
 
     #kara{
     width: 100%;}
@@ -99,6 +101,11 @@ header p{
 	float: right;
 	width: 50%;}
 
+#eu p{
+	font-size: 1.5em;
+
+}
+
 /*Habilidades*/
 
 #habilidades{
@@ -120,7 +127,8 @@ header p{
 #habilidades p{
 	line-height: 1.5;
 	margin: 2vh;
-	font-size: 1.2em;}
+	font-size: 1.2em;
+	text-align: center;}
 
 #habilidades img{
 	margin: 10 px 0;}
@@ -136,44 +144,125 @@ header p{
 
 /*Competências*/
 
-#Competências{
+#competencias{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 20px;
 	margin-left: 20px;
-	margin-right: 20px;}
+	margin-right: 20px;
+}
 
-#Competências h2{
+#competencias h2{
 	margin-bottom: 10px;
 	margin-top: 5px;
 	font-size: 2em;
 	text-align: center;}
 
-#Competências h3,p{
+#competencias h3,p{
 	margin-bottom: 10px;
 	margin-top: 5px;
 	font-size: 1em;
 	text-align: center;}
 
-#Competências a{
+#a1{
 	text-decoration: none;}
 
-#Competências .port img{
-	width: 100%;
-	margin-bottom: 0;}
+#competencias img{
+	width:50%;
+	margin-bottom: 0;
+}
 
-#Competências p{
+#competencias .port p{
+	margin-top: 0;
+	padding-right: 15px; 
+	padding-left: 15px;
+	line-height: 1.5;
+}
+
+#competencias #p p{
 	border-left: 2px solid black;
 	border-right: 2px solid black;
 	border-bottom: 2px solid black;
-	margin-top: 0;
-	font-family: 'Open Sans', sans-serif;
-	padding-right: 15px;
-	padding-left: 15px;
-	line-height: 1.5;}
+			
+}
 
+#port a:hover {
+  background-color: #A6FFCB;
+}
 
+/*Conquistas*/
+
+#conquistas p{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+/*Hobbies*/
+
+#hobby{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+
+.hobby{
+	padding-top: 50px;
+	width: 80%;
+	align-items: center;
+	text-align: center;
+}
+
+.hobby h3{
+	font-size: 1.5em;
+}
+
+#hobinho{
+	text-align: center;
+	font-size: 2em;
+}
+
+#i{
+	margin-top: 50px;
+}
+
+/*Contato*/
+
+#contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #A6FFCB;
+	color: #B3463E;
+	width: 100%;
+}
+
+#contato h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-width: 20px;
+	font-size: 2em;
+	text-align: center;
+	color: #B3463E;
+}
+
+#contato a{
+	text-decoration: none;
+	color: #B3463E;
+	text-align: center;
+}
+
+footer{
+	text-align: left;
+	width: 100%;
+	color: #A6FFCB;
+	background-color: #B3463E;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
 
 /*Responsivo*/
 
@@ -229,16 +318,40 @@ header{
 	flex-basis: 300px;
 	padding: 0 10px;}
 
+#habilidades p{
+	text-align: center;}
+
 /*Competências*/
 
-#Competências {
+#competencias {
 	flex-direction: row;
 	flex-wrap: wrap;}
 
-#Competências h2,h3{
+#competencias h2,h3{
 	width:100%;
 	text-align: center;}
 
-#Competências .port{
-	width: 50%
-	text-align:center;}}
+#competencias .port{
+	width:33.3%;
+	text-align:center;
+	flex-direction: row;}
+
+/*Contatos*/
+
+#contato{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	max-height: 40vh;
+	width: 100%;
+}
+
+#contato h2{
+	width: 100%;
+	text-align: center;
+}
+
+}
